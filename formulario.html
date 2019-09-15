@@ -11,7 +11,7 @@
 			<fieldset>
 				<div class="field field-nascimento">
 					<label>Nascimento</label>
-					<input id="data-nascimento" required class="iMask" type="date" name="nascimento">
+					<input id="data-nascimento" required class="iMask" type="date" name="nascimento" value="1989-01-03"
 				</div>
 				<div class="field field-sexo">
 					<label>Sexo</label>
@@ -22,22 +22,22 @@
 				</div>
 				<div class="field field-idade-aposentadoria">
 					<label>Idade para Aposentadoria</label>
-					<input id="idade-aposentadoria" required class="iMask" type="number" step="1" min="48" name="idade-aposentadoria">
+					<input id="idade-aposentadoria" required class="iMask" type="number" step="1" min="48" name="idade-aposentadoria" value="55">
 					<legend>Nota: a idade em que deseja se aposentar. Idade mínima de 48 anos para mulheres e 53 anos para homens.</legend>
 				</div>
 				<div class="field field-salario-real-contribuicao">
 					<label>Salario Real de Contribuição (R$)</label>
-					<input id="salario-real-contribuicao" required class="iMask" type="number" name="salario-real-contribuicao">
+					<input id="salario-real-contribuicao" required class="iMask" type="number" name="salario-real-contribuicao" value="6000">
 					<legend>Nota: O salário real de contribuição é composto por todas as rubricas que sofrem desconto para a Previdência Social como, por exemplo, Salário Base, Periculosidade, Horas Extras, Sobreaviso, entre outras.</legend>
 				</div>
 				<div class="field field-aporte-inicial">
 					<label>Aporte Inicial (R$)</label>
-					<input id="aporte-inicial" class="iMask" type="number" name="aporte-inicial" value="0">
+					<input id="aporte-inicial" class="iMask" type="number" name="aporte-inicial" value="30000">
 					<legend>Nota: caso deseje realizar um aporte de recurso à sua reserva no momento em que entrar no plano.</legend>
 				</div>
 				<div class="field field-contribuicao-espontanea">
 					<label>Contribuição Espontânea (R$)</label>
-					<input id="contribuicao-espontanea" class="iMask" type="number" name="contribuicao-espontanea" value="0">
+					<input id="contribuicao-espontanea" class="iMask" type="number" name="contribuicao-espontanea" value="100">
 					<legend>Nota: caso deseje realizar aportes mensais voluntários de recursos para incrementar a sua reserva.</legend>
 				</div>
 				<div class="field field-rentabilidade-esperada">
@@ -60,15 +60,8 @@
 				<legend class="fieldset-titulo">Resultado da Simulação</legend>
 				<div>
 					<table>
-						<tbody>
-							<tr>
-								<td>Contribuição calculada:</td>
-								<td>235,00</td>
-							</tr>
-							<tr>
-								<td>Benefício calculado:</td>
-								<td>10.235,00</td>
-							</tr>
+						<tbody id="tabela-resultado">
+							<!-- tr e td serão criadas após a simulação -->
 						</tbody>
 					</table>
 				</div>
