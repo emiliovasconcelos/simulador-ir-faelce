@@ -1,7 +1,6 @@
 .simulador-novo-participante {
-	width: 500px;
+	width: auto;
 	height: auto;
-	display: block;
 	margin: 0 auto;
 	text-align: left;
 	font: 14px/20px Arial, Helvetica, sans-serif;
@@ -9,9 +8,10 @@
 }
 
 fieldset {
-    padding: 10px 15px;
-    margin: 0 20px 20px 0;
-    border: 1px solid #033d7b;
+	padding: 10px 15px;
+	border: 1px solid #033d7b;
+	justify-content: center;
+
 }
 
 legend {
@@ -23,45 +23,26 @@ legend {
 	border: 0px;
     float: none;
     display: inline-block;
-	margin: 2px 5px 6px 0;
+	margin: 5px;
 }
 
 .fieldset-titulo {
 	font-size: 20px;
 	text-transform: uppercase;
+	text-align: center;
 	color: #033d7b;
 }
 
-.simulador-novo-participante fieldset .field-nascimento {
-	width: 100%;
-}
-
-.simulador-novo-participante fieldset .field-sexo {
-	width: 100%;
-}
-
-.simulador-novo-participante fieldset .field-idade-aposentadoria {
-	width: 100%;
-}
-
-.simulador-novo-participante fieldset .field-aporte-inicial {
-	width: 100%;
-}
-
-.simulador-novo-participante fieldset .field-salario-real-contribuicao {
-	width: 100%;
-}
-
-.simulador-novo-participante fieldset .field-contribuicao-espontanea {
-	width: 100%;
-}
-
-.simulador-novo-participante fieldset .field-rentabilidade-esperada {
-	width: 100%;
-}
-
-.simulador-novo-participante fieldset .field-prazo-recebimento {
-	width: 100%;
+.simulador-novo-participante fieldset .field-nascimento,
+.simulador-novo-participante fieldset .field-sexo,
+.simulador-novo-participante fieldset .field-idade-aposentadoria,
+.simulador-novo-participante fieldset .field-aporte-inicial,
+.simulador-novo-participante fieldset .field-salario-real-contribuicao,
+.simulador-novo-participante fieldset .field-contribuicao-espontanea,
+.simulador-novo-participante fieldset .field-rentabilidade-esperada,
+.simulador-novo-participante fieldset .field-prazo-recebimento
+ {
+	width: 46%;
 }
 
 .simulador-novo-participante fieldset .field .iMask {
@@ -71,6 +52,7 @@ legend {
 }
 
 .div-calcular{
+	padding-top: 10px;
 	text-align: center;
 }
 
@@ -84,4 +66,35 @@ legend {
     background-color: #5b81a9;
     cursor: pointer;
 	font-size: 12px;
+}
+
+.resultado-contribuicao-valor,
+.resultado-beneficio-valor,
+.resultado-reserva-valor,
+.resultado-prazo-recebimento-valor {
+	padding-left: 35px;
+	text-align: right;
+}
+
+.simulador-novo-participante-resultado {
+	width: 350px;
+}
+
+#mensagem-erro {
+	color: red;
+	font-weight: bold;
+}
+
+#nota-contribuicao {
+	color: black;
+	font-weight: bold;
+}
+
+ul {
+	text-align: center;
+	list-style: none;
+}
+
+form input[type="number"] {
+	max-width: 100%;
 }
