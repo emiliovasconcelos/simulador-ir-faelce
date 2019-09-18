@@ -6,72 +6,41 @@
 	<link rel="stylesheet" href="css/estilo.css"/>
 </head>
 <body>
-	<div id="body-simulador-plano-cd">
-		<form id="form-dados-simulacao" class="simulador-novo-participante" action="" name="simulador-novo-participante">
+	<div id="body-incentivo-fiscal-plano-cd">
+		<form id="form-dados-incentivo-fiscal" action="" name="simulador-novo-participante">
 			<fieldset>
-				<legend class="fieldset-titulo">Dados para Simulação</legend>
-				<div class="field field-nascimento">
-					<label>Nascimento</label>
-					<input id="data-nascimento" required class="iMask" type="date" name="nascimento">
-				</div>
-				<div class="field field-sexo">
-					<label>Sexo</label>
-					<select id="sexo" name="sexo" class="Mask">
-						<option label="Masculino" value="1">Masculino</option>
-						<option label="Feminino" value="2">Feminino</option>
-					</select>
-				</div>
-				<div class="field field-idade-aposentadoria">
-					<label>Idade para Aposentadoria</label>
-					<input id="idade-aposentadoria" required class="iMask" type="number" step="1" min="48" name="idade-aposentadoria" value="55">
-					<legend>Idade mínima de 48 anos para mulheres e 53 anos para homens.</legend>
-				</div>
+				<legend class="fieldset-titulo">Incentivo fiscal sobre a sua contribuição</legend>
 				<div class="field field-salario-real-contribuicao">
-					<label>Salario Real de Contribuição -  SRC (R$)</label>
-					<input id="salario-real-contribuicao" required class="iMask" type="number" name="salario-real-contribuicao" min="0" step="0.01" value="0">
-					<legend>O SRC é composto por todas as rubricas que sofrem desconto para a Previdência Social.</legend>
+					<label>Salario Real de Contribuição (R$)</label>
+					<input id="salario-real-contribuicao-incentivo-fiscal" required class="iMask" type="number" name="salario-real-contribuicao" min="0" step="0.01" value="0">
+					<legend></legend>
 				</div>
-				<div class="field field-aporte-inicial">
-					<label>Aporte Inicial (R$)</label>
-					<input id="aporte-inicial" class="iMask" type="number" name="aporte-inicial" min="0" step="0.01" value="0">
-					<legend>Caso deseje realizar um aporte de recurso à sua reserva no momento em que entrar no plano.</legend>
-				</div>
-				<div class="field field-contribuicao-espontanea">
-					<label>Contribuição Espontânea (R$)</label>
-					<input id="contribuicao-espontanea" class="iMask" type="number" name="contribuicao-espontanea" min="0" step="0.01" value="0">
-					<legend>Caso deseje realizar aportes mensais voluntários de recursos para incrementar a sua reserva.</legend>
-				</div>
-				<div class="field field-rentabilidade-esperada">
-					<label>Rentabilidade Real Anual Esperada (%)</label>
-					<input id="rentabilidade-esperada" required class="iMask" type="number" step="0.01" min="0" max="6" name="rentabilidade-esperada" value="4.5">
-					<legend>A rentabilidade esperada não leva em consideração qualquer índice de inflação. Para efeito de simulação favor escolher uma Rentabilidade entre 0,00% e 6,00%</legend>
-				</div>
-				<div class="field field-prazo-recebimento">
-					<label>Prazo de Recebimento (em anos)</label>
-					<input id="prazo-recebimento" required class="iMask" type="number" step="1" min="10" max="50" name="prazo-recebimento" value="10">
-					<legend>É o prazo durante o qual receberá a sua reserva em forma de benefício mensal. Prazo mínimo de 10 anos e máximo de 50 anos.</legend>
+				<div class="field field-quantidade-dependente dinheiro">
+					<label>Quantidades de Dependentes</label>
+					<input id="quantidade-dependente-incentivo-fiscal" class="iMask" type="number" name="quantidade-dependente" min="0" step="1" value="0">
+					<legend></legend>
 				</div>
 			</fieldset>
-			<div class="div-calcular">
-				<button id="realizar-calculo" class="botao-calcular">Calcular</button>
+			<div class="div-calcular-incentivo-fiscal">
+				<button id="realizar-calculo-incentivo-fiscal" class="botao-calcular-incentivo-fiscal">Calcular</button>
 			</div>
-			<ul id="mensagem-erro">
+			<ul id="mensagem-erro-incentivo-fiscal">
 				<!-- li's serão criadas caso existam erros nos parâmetros informados -->
 			</ul>
 		</form>
-		<form class="simulador-novo-participante simulador-novo-participante-resultado" name="simulador-novo-participante-resultado">
+		<form id="form-dados-incentivo-fiscal-resultado" name="form-dados-incentivo-fiscal-resultado">
 			<fieldset>
 				<legend class="fieldset-titulo">Simulação</legend>
 				<div>
 					<table>
-						<tbody id="tabela-resultado">
+						<tbody id="tabela-resultado-incentivo-fiscal">
 							<!-- tr e td serão criadas após a simulação -->
 						</tbody>
 					</table>
 				</div>
 			</fieldset>
 		</form>
-		<ul id="nota-contribuicao">
+		<ul id="nota-contribuicao-incentivo-fiscal">
 				<!-- li's serão criadas após simulação -->
 		</ul>
 	</div>

@@ -1,10 +1,15 @@
-.simulador-novo-participante {
+#form-dados-incentivo-fiscal,
+#form-dados-incentivo-fiscal-resultado {
 	width: auto;
 	height: auto;
 	margin: 0 auto;
 	text-align: left;
 	font: 14px/20px Arial, Helvetica, sans-serif;
 	color: #000;
+}
+
+#form-dados-incentivo-fiscal-resultado{
+	max-width: 600px;
 }
 
 fieldset {
@@ -33,30 +38,24 @@ legend {
 	color: #033d7b;
 }
 
-.simulador-novo-participante fieldset .field-nascimento,
-.simulador-novo-participante fieldset .field-sexo,
-.simulador-novo-participante fieldset .field-idade-aposentadoria,
-.simulador-novo-participante fieldset .field-aporte-inicial,
-.simulador-novo-participante fieldset .field-salario-real-contribuicao,
-.simulador-novo-participante fieldset .field-contribuicao-espontanea,
-.simulador-novo-participante fieldset .field-rentabilidade-esperada,
-.simulador-novo-participante fieldset .field-prazo-recebimento
+.field-salario-real-contribuicao,
+.field-quantidade-dependente
  {
 	width: 46%;
 }
 
-.simulador-novo-participante fieldset .field .iMask {
+.iMask {
 	text-transform: uppercase;
 	width: 100%;
 	height: 20px;
 }
 
-.div-calcular{
+.div-calcular-incentivo-fiscal {
 	padding-top: 10px;
 	text-align: center;
 }
 
-.botao-calcular {
+.botao-calcular-incentivo-fiscal {
 	text-align: center;
 	color: #fff;
 	padding: 3px;
@@ -76,18 +75,16 @@ legend {
 	text-align: right;
 }
 
-.simulador-novo-participante-resultado {
-	width: 350px;
-}
-
-#mensagem-erro {
+#mensagem-erro-incentivo-fiscal {
 	color: red;
 	font-weight: bold;
 }
 
-#nota-contribuicao {
+#nota-contribuicao-incentivo-fiscal {
 	color: black;
-	font-weight: bold;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-align: left;
 }
 
 ul {
